@@ -1,6 +1,7 @@
 import file_360_entities.File360
 import java.io.File
 import main_entities.*
+import start_entities.Start
 
 class Reader(inputFolderName: String){
 
@@ -9,25 +10,52 @@ class Reader(inputFolderName: String){
     var figureName = ""
 
     val inputMainFolderName = inputFolderName
-
-    val partsImagesFolderName = "/ out/Parts"
-    val file360ImagesFolderName = "/ out/360"
-    var constructionImagesFolder = ""
-
     var partsFolder = ""
 
-    var all360Images = ArrayList<String>()
+    val partsImagesFolderName = "/ out/Parts"           // for main part in main file
+    val jokeImagesFolderName = "/ out/Joke"             // for joke in main file
+    val constructionImagesFolder = "/ out/Construction" // for disappearance
+    val file360ImagesFolderName = "/ out/360"           // for 360 file
+    val animationImagesFolder  = "/ out/Animation"      // for animation in finish
+    val lipsImagesFolder = "/ out/Lips"                 // for lips in finish
+
+
+
     var allPartsImages = ArrayList<String>()
+    var allConstructionImages = ArrayList<String>()
+    var allJokeImages = ArrayList<String>()
+    var all360Images = ArrayList<String>()
+    var allAnimationImages = ArrayList<String>()
+    var allLipsImages = ArrayList<String>()
+
+
 
     fun read(){
 
         readPartsImages()
-
         read360Images()
+        readConstructionImages()
+        readJokeImages()
+        readLipsImages()
+        readAnimationImages()
+
+        checkPartsImages()
+        checkJokeImages()
+        checkConstructionImages()
+
+
+        allPartsImages.sort()
+        allConstructionImages.sort()
+        all360Images.sort()
+        allJokeImages.sort()
+        allAnimationImages.sort()
+        allLipsImages.sort()
 
     }
 
-    fun readPartsImages(){
+    private fun readPartsImages(){
+
+        if(!File(inputMainFolderName).exists()){println ("Parts folder not found")}
 
         File(inputMainFolderName).listFiles().forEach {
 
@@ -50,9 +78,101 @@ class Reader(inputFolderName: String){
 
         }
 
+    }
+
+    private fun readJokeImages(){
+
+        if(!File("$inputMainFolderName/$figureName$jokeImagesFolderName").exists()){println ("Joke folder not found")}
+
+        File("$inputMainFolderName/$figureName$jokeImagesFolderName").listFiles().forEach{
+
+            if(fileIsImage(it)){
+
+                allJokeImages.add(it.name)
+
+            }
+
+        }
+
+    }
+
+    private fun read360Images(){
+
+        if(!File("$inputMainFolderName/$figureName$file360ImagesFolderName").exists()){println ("360 folder not found")}
+
+        File("$inputMainFolderName/$figureName$file360ImagesFolderName").listFiles().forEach{
+
+            if(fileIsImage(it)){
+
+                all360Images.add(it.name)
+
+            }
+
+        }
+
+    }
+
+    private fun readConstructionImages(){
+
+        if(!File("$inputMainFolderName/$figureName$constructionImagesFolder").exists()){println ("Construction folder not found")}
+
+        File("$inputMainFolderName/$figureName$constructionImagesFolder").listFiles().forEach {
+
+            if(fileIsImage(it) && (it.name.startsWith("b")||(it.name.startsWith("B")))){
+
+                allConstructionImages.add(it.name)
+
+            }
+
+        }
+
+    }
+
+    private fun readLipsImages(){
+
+        if(!File("$inputMainFolderName/$figureName$lipsImagesFolder").exists()){println ("Lips folder not found")}
+
+        File("$inputMainFolderName/$figureName$lipsImagesFolder").listFiles().forEach {
+
+            if(fileIsImage(it)){
+
+                allLipsImages.add(it.name)
+
+            }
+
+        }
+
+    }
+
+    private fun readAnimationImages(){
+
+        if(!File("$inputMainFolderName/$figureName$animationImagesFolder").exists()){println ("Animation folder not found")}
+
+        File("$inputMainFolderName/$figureName$animationImagesFolder").listFiles().forEach {
+
+            if(fileIsImage(it)){
+
+                allAnimationImages.add(it.name)
+
+            }
+
+        }
+
+    }
+
+
+
+
+
+    private fun checkPartsImages(){
+
+        var counter = 0
+
         for(i in 0 until allPartsImages.size){
 
             if(!allPartsImages[i].contains(figureName)){
+
+                counter++
 
                 var mass = allPartsImages[i].split("_")
 
@@ -77,40 +197,69 @@ class Reader(inputFolderName: String){
 
         }
 
-        allPartsImages.sort()
+        if(counter > 0) println("$counter parts images do not have expected format")
 
     }
 
-    fun read360Images(){
+    private fun checkJokeImages(){ if(allJokeImages.isEmpty()) println("joke images not found") }
 
-        File("$inputMainFolderName/$figureName$file360ImagesFolderName").listFiles().forEach{
+    private fun checkConstructionImages(){
 
-            if(fileIsImage(it)){
+        var counter = 0
 
-                all360Images.add(it.name)
+        allConstructionImages.forEach {image->
 
-            }
+            var array = image.toLowerCase().split("_")
+
+            if(
+                    array.size < 6 ||
+                    !image.toLowerCase().contains(figureName.toLowerCase()) ||
+                    !image.startsWith("b"))
+
+            counter ++
 
         }
 
+        if(counter > 0) println("$counter construction images do not have expected format")
+
     }
 
-    fun createCharacter(): Character{
 
-        var character = Character()
 
-        // Character main data
+
+
+    fun createCharacter(): ClayCharacter{
+
+        var character = ClayCharacter()
+
+        // ClayCharacter main data
         character.name = getCharacterName(allPartsImages[0])
 
         character.parts = getAllBodyParts()
 
-        // 360 data
 
+        var disapCreator = DisappearanceCreator(allConstructionImages,allJokeImages)
+
+        disapCreator.createDisaps(character)
+
+
+        // 360 data
         character.file360 = create360File(all360Images)
+
+
+        // finish data
+        character.finish.animationImages = allAnimationImages
+        character.finish.lipsImages = allLipsImages
+
+
+        // start data
+        character.start = Start(figureName)
 
         return character
 
     }
+
+    // 360
 
     private fun create360File(images360: ArrayList<String>): File360{
 
@@ -118,9 +267,12 @@ class Reader(inputFolderName: String){
 
         result.images360.addAll(images360)
 
+
         return result
 
     }
+
+    // Main
 
     private fun getAllBodyParts(): ArrayList<BodyPart>{
 
@@ -133,6 +285,16 @@ class Reader(inputFolderName: String){
             val bodyPart = BodyPart()
 
             bodyPart.type = partName
+
+            allPartsImages.forEach {
+
+                if(getBodyPartName(it).equals(partName)){
+
+                    bodyPart.partNumber = getBodyPartNumber(it)
+
+                }
+
+            }
 
             bodyPart.actions.addAll(getActionsByBodyPart(partName, allPartsImages))
 
@@ -207,21 +369,23 @@ class Reader(inputFolderName: String){
 
         var previousActionNumber = "000"
         var currentAction = Action()
+        currentAction.type = getActionType(listAllPartImages[0])
 
-        listAllPartImages.forEach {
+        listAllPartImages.forEach {currentImage->
 
-            var currentActionNumber = getActionNumber(it)
+            var currentActionNumber = getActionNumber(currentImage)
 
             if(!currentActionNumber.substring(0, 2).equals(previousActionNumber.substring(0,2))){
 
                 currentAction = Action()
                 result.add(currentAction)
-                currentAction.allActionImages.add(it)
+                currentAction.type = getActionType(currentImage)
+                currentAction.allActionImages.add(currentImage)
                 previousActionNumber = currentActionNumber
 
             }else{
 
-                currentAction.allActionImages.add(it)
+                currentAction.allActionImages.add(currentImage)
 
             }
 
@@ -230,8 +394,6 @@ class Reader(inputFolderName: String){
         return result
 
     }
-
-    //private fun sliceActionToConversions( ArrayList<>)
 
     private fun getImagesByPartName(partName: String, allParts: ArrayList<String>): ArrayList<String>{
 
@@ -295,7 +457,20 @@ class Reader(inputFolderName: String){
 
     private fun getActionType(image: String): String{
 
-        return image.split('_')[4]
+        val array = image.split('_')
+
+        if(array.size < 5){
+
+            println("did not found action type in $image")
+            return ""
+
+        }
+
+        val res = array[4]
+
+        if(res.isEmpty() || res.length < 2) return res
+
+        return res.substring(0,2).toUpperCase()
 
     }
 
@@ -311,6 +486,12 @@ class Reader(inputFolderName: String){
 
     }
 
+    private fun getBodyPartNumber(image: String): String{
+
+        return image.split('_')[0]
+
+    }
+
     private fun startsWithNumber(string: String): Boolean{
 
         return numbers.contains(string[0])
@@ -322,5 +503,6 @@ class Reader(inputFolderName: String){
         return file.name.contains(".png")||file.name.contains(".jpg")
 
     }
+
 
 }

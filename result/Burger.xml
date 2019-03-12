@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Figure name="Burger" anchorPointX="0.5" anchorPointY="0">
 	<Part type="bodydown" disappearanceInterval="1">
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="H1" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -11,7 +11,7 @@
 				<img src="01_Burger_bodydown_01_h1.png" />
 			</Conversion>
 		</Action>
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="H6" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -45,9 +45,16 @@
 				<img src="01_Burger_bodydown_02_h6_05.png" />
 			</Conversion>
 		</Action>
+		<Disappearance rotate="false">
+			<Audio>
+			</Audio>
+			<Component type="" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_01_bodydown_02_h6_05.jpg" />
+			</Component>
+		</Disappearance>
 	</Part>
 	<Part type="leg" disappearanceInterval="1">
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="F1" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -60,7 +67,7 @@
 				<img src="02_Burger_leg_01_f1d.png" />
 			</Conversion>
 		</Action>
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="F2" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -73,7 +80,7 @@
 				<img src="02_Burger_leg_02_f2d.png" />
 			</Conversion>
 		</Action>
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="F5" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -86,9 +93,40 @@
 				<img src="02_Burger_leg_03_f5d.png" />
 			</Conversion>
 		</Action>
+		<Disappearance rotate="false">
+			<Audio>
+			</Audio>
+			<Component type="A" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_02_burger_leg_03A_f5.jpg" />
+			</Component>
+			<Component type="B" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_02_burger_leg_03B_f5.jpg" />
+			</Component>
+			<Component type="C" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_02_burger_leg_03C_f5.jpg" />
+			</Component>
+			<Component type="D" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" joke="true" >
+				<img src="b_02_burger_leg_03D_f5BEGIN.jpg" />
+				<img src="J01.jpg" />
+				<img src="J02.jpg" />
+				<img src="J03.jpg" />
+				<img src="J04.jpg" />
+				<img src="J05.jpg" />
+				<img src="J06.jpg" />
+				<img src="J07.jpg" />
+				<img src="J08.jpg" />
+				<img src="J09.jpg" />
+				<img src="J10.jpg" />
+				<img src="J11.jpg" />
+				<img src="J12.jpg" />
+				<img src="J13.jpg" />
+				<img src="J14.jpg" />
+				<img src="J15.jpg" />
+			</Component>
+		</Disappearance>
 	</Part>
 	<Part type="bodyUp" disappearanceInterval="1">
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="H1" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -98,7 +136,7 @@
 				<img src="03_Burger_bodyUp_01_h1.png" />
 			</Conversion>
 		</Action>
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="H6" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -108,9 +146,23 @@
 				<img src="03_Burger_bodyUp_02_h6.png" />
 			</Conversion>
 		</Action>
+		<Disappearance rotate="false">
+			<Audio>
+			</Audio>
+			<Component type="" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_03_burger_bodyUp_02_h6_x01.jpg" />
+				<img src="b_03_burger_bodyUp_02_h6_x02.jpg" />
+				<img src="b_03_burger_bodyUp_02_h6_x03.jpg" />
+				<img src="b_03_burger_bodyUp_02_h6_x04.jpg" />
+				<img src="b_03_burger_bodyUp_02_h6_x05.jpg" />
+				<img src="b_03_burger_bodyUp_02_h6_x06.jpg" />
+				<img src="b_03_burger_bodyUp_02_h6_x07.jpg" />
+				<img src="b_03_burger_bodyUp_02_h6_x08.jpg" />
+			</Component>
+		</Disappearance>
 	</Part>
 	<Part type="tooth" disappearanceInterval="1">
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="F1" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -152,7 +204,7 @@
 				<img src="04_Burger_tooth_01_f1bg.png" />
 			</Conversion>
 		</Action>
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="H6" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -194,9 +246,49 @@
 				<img src="04_Burger_tooth_02_h6bg.png" />
 			</Conversion>
 		</Action>
+		<Disappearance rotate="false">
+			<Audio>
+			</Audio>
+			<Component type="A" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_04_burger_tooth_02A_h6.jpg" />
+			</Component>
+			<Component type="B" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_04_burger_tooth_02B_h6.jpg" />
+			</Component>
+			<Component type="C" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_04_burger_tooth_02C_h6.jpg" />
+			</Component>
+			<Component type="D" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_04_burger_tooth_02D_h6.jpg" />
+			</Component>
+			<Component type="E" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_04_burger_tooth_02E_h6.jpg" />
+			</Component>
+			<Component type="F" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_04_burger_tooth_02F_h6.jpg" />
+			</Component>
+			<Component type="G" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_04_burger_tooth_02G_h6.jpg" />
+			</Component>
+			<Component type="H" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_04_burger_tooth_02H_h6.jpg" />
+			</Component>
+			<Component type="I" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_04_burger_tooth_02I_h6.jpg" />
+			</Component>
+			<Component type="J" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_04_burger_tooth_02J_h6.jpg" />
+			</Component>
+			<Component type="K" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_04_burger_tooth_02K_h6.jpg" />
+			</Component>
+			<Component type="L" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_04_burger_tooth_02L_h6.jpg" />
+			</Component>
+		</Disappearance>
 	</Part>
 	<Part type="tongue" disappearanceInterval="1">
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="F1" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -206,7 +298,7 @@
 				<img src="05_Burger_tongue_01_f1.png" />
 			</Conversion>
 		</Action>
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="H3" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -222,7 +314,7 @@
 				<img src="05_Burger_tongue_02_h3_02.png" />
 			</Conversion>
 		</Action>
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="F4" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -232,7 +324,7 @@
 				<img src="05_Burger_tongue_03_f4.png" />
 			</Conversion>
 		</Action>
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="M5" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -242,7 +334,7 @@
 				<img src="05_Burger_tongue_04_m5.png" />
 			</Conversion>
 		</Action>
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="F5" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -276,7 +368,7 @@
 				<img src="05_Burger_tongue_05_f5_05.png" />
 			</Conversion>
 		</Action>
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="F5" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -310,9 +402,16 @@
 				<img src="05_Burger_tongue_06_f5_05.png" />
 			</Conversion>
 		</Action>
+		<Disappearance rotate="false">
+			<Audio>
+			</Audio>
+			<Component type="" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_05_burger_tongue_06_f5_05.jpg" />
+			</Component>
+		</Disappearance>
 	</Part>
 	<Part type="tongueFlake" disappearanceInterval="1">
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="F1" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -326,7 +425,7 @@
 				<img src="06_Burger_tongueFlake_01_f1e.png" />
 			</Conversion>
 		</Action>
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="H6" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -340,9 +439,22 @@
 				<img src="06_Burger_tongueFlake_02_h6e.png" />
 			</Conversion>
 		</Action>
+		<Disappearance rotate="false">
+			<Audio>
+			</Audio>
+			<Component type="A" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_06_burger_tongueFlake_02A_h6.jpg" />
+			</Component>
+			<Component type="BC" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_06_burger_tongueFlake_02BC_h6.jpg" />
+			</Component>
+			<Component type="DE" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_06_burger_tongueFlake_02DE_h6.jpg" />
+			</Component>
+		</Disappearance>
 	</Part>
 	<Part type="bubbles" disappearanceInterval="1">
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="F1" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -366,7 +478,7 @@
 				<img src="07_Burger_bubbles_01_f1o.png" />
 			</Conversion>
 		</Action>
-		<Action type="" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+		<Action type="H6" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
 			<Audio>
 			</Audio>
 			<Conversion>
@@ -390,5 +502,31 @@
 				<img src="07_Burger_bubbles_02_h6o.png" />
 			</Conversion>
 		</Action>
+		<Disappearance rotate="false">
+			<Audio>
+			</Audio>
+			<Component type="A" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_07_burger_bubbles_02A_h6_x01.jpg" />
+				<img src="b_07_burger_bubbles_02A_h6_x02.jpg" />
+				<img src="b_07_burger_bubbles_02A_h6_x03.jpg" />
+				<img src="b_07_burger_bubbles_02A_h6_x04.jpg" />
+				<img src="b_07_burger_bubbles_02A_h6_x05.jpg" />
+				<img src="b_07_burger_bubbles_02A_h6_x06.jpg" />
+				<img src="b_07_burger_bubbles_02A_h6_x07.jpg" />
+				<img src="b_07_burger_bubbles_02A_h6_x08.jpg" />
+				<img src="b_07_burger_bubbles_02A_h6_x09.jpg" />
+				<img src="b_07_burger_bubbles_02A_h6_x10.jpg" />
+				<img src="b_07_burger_bubbles_02A_h6_x11.jpg" />
+			</Component>
+			<Component type="B" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_07_burger_bubbles_02B_h6.jpg" />
+			</Component>
+			<Component type="C" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_07_burger_bubbles_02C_h6.jpg" />
+			</Component>
+			<Component type="D" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_07_burger_spot_02D_h6.jpg" />
+			</Component>
+		</Disappearance>
 	</Part>
 </Figure>

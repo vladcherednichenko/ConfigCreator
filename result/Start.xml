@@ -1,0 +1,11 @@
+<Start animal="Burger" anchorPointX="0.5" anchorPointY="0.5" persOffsetX="-15" persOffsetY="0">
+	<Color hex="25CB89"/>
+	<Clays anchorPointY="0.5" scale="1">
+	</Clays>
+	<Audio>
+		<Start>
+		</Start>
+		<Clay>
+		</Clay>
+	</Audio>
+</Start>

@@ -1,14 +1,20 @@
 package main_entities
 
 import file_360_entities.File360
+import finish_entities.Finish
+import start_entities.Start
 
-class Character {
+class ClayCharacter {
 
     var name : String = ""
 
     var parts = ArrayList<BodyPart>()
 
     var file360 = File360()
+
+    var finish = Finish()
+
+    var start = Start(name)
 
     override fun toString(): String{
 

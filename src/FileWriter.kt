@@ -1,5 +1,7 @@
 import file_360_entities.File360
-import main_entities.Character
+import finish_entities.Finish
+import main_entities.ClayCharacter
+import start_entities.Start
 import java.io.File
 
 class FileWriter (characterName: String){
@@ -11,12 +13,14 @@ class FileWriter (characterName: String){
 
     var xmlFileStart = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
 
-    fun writeCharacterToFile(character: Character, folder: String){
+    fun writeCharacterToFile(clayCharacter: ClayCharacter, folder: String){
 
         cleanFolder(folder)
 
-        writeMainFile(character, folder)
-        write360File(character.file360, folder)
+        writeMainFile(clayCharacter, folder)
+        write360File(clayCharacter.file360, folder)
+        writeFinishFile(clayCharacter.finish, folder)
+        writeStartFile(clayCharacter.start, folder)
 
     }
 
@@ -26,11 +30,11 @@ class FileWriter (characterName: String){
 
     }
 
-    fun writeMainFile(character: Character, folderName: String){
+    fun writeMainFile(clayCharacter: ClayCharacter, folderName: String){
 
 
         File(folderName + File.separator + mainFileName).createNewFile()
-        File(folderName + File.separator + mainFileName).writeText(xmlFileStart + character.toString())
+        File(folderName + File.separator + mainFileName).writeText(xmlFileStart + clayCharacter.toString())
 
     }
 
@@ -40,6 +44,22 @@ class FileWriter (characterName: String){
         File(folderName + File.separator + file360Name).writeText(file.toString())
 
     }
+
+    fun writeFinishFile(finishFile: Finish, folderName: String){
+
+        File(folderName + File.separator + finishFileName).createNewFile()
+        File(folderName + File.separator + finishFileName).writeText(finishFile.toString())
+
+    }
+
+    fun writeStartFile(startFile: Start, folderName: String){
+
+        File(folderName + File.separator + startFileName).createNewFile()
+        File(folderName + File.separator + startFileName).writeText(startFile.toString())
+
+    }
+
+
 
 
 }

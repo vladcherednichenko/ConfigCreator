@@ -1,4 +1,4 @@
-object Start {
+object Main {
 
     var outputFolder = "./result"
     var inputFolder = "./character"

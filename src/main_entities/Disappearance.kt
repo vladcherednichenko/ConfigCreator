@@ -12,7 +12,7 @@ class Disappearance {
 
         components.forEach { result += it.toString() }
 
-        result += "\t\t</Disappearance>"
+        result += "\t\t</Disappearance>\n"
 
         return result
 

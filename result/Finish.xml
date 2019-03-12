@@ -1,0 +1,48 @@
+<Finish>
+	<DoneAudio>
+	</DoneAudio>
+	<LipsAudio pitch="-6" speed="-2">
+	</LipsAudio pitch="-6" speed="-2">
+	<Lips>
+		<img src="L01.jpg" />
+		<img src="L02.jpg" />
+		<img src="L03.jpg" />
+		<img src="L04.jpg" />
+		<img src="L05.jpg" />
+		<img src="L06.jpg" />
+		<img src="L07.jpg" />
+		<img src="L08.jpg" />
+		<img src="L09.jpg" />
+		<img src="L10.jpg" />
+	</Lips>
+	<Animation>
+		<img src="11-21.png" />
+		<img src="A01.jpg" />
+		<img src="A02.jpg" />
+		<img src="A03.jpg" />
+		<img src="A04.jpg" />
+		<img src="A05.jpg" />
+		<img src="A06.jpg" />
+		<img src="A07.jpg" />
+		<img src="A08.jpg" />
+		<img src="A09.jpg" />
+		<img src="A10.jpg" />
+		<img src="A11.jpg" />
+		<img src="A12.jpg" />
+		<img src="A13.jpg" />
+		<img src="A14.jpg" />
+		<img src="A15.jpg" />
+		<img src="A16.jpg" />
+		<img src="A17.jpg" />
+		<img src="A18.jpg" />
+		<img src="A19.jpg" />
+		<img src="A20.jpg" />
+		<img src="A21.jpg" />
+		<img src="A22.jpg" />
+		<img src="A23.jpg" />
+		<img src="A24.jpg" />
+		<img src="A25.jpg" />
+		<img src="A26.jpg" />
+		<img src="A27.jpg" />
+	</Animation>
+</Finish>
