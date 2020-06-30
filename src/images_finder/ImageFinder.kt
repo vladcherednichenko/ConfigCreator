@@ -25,11 +25,28 @@ class ImageFinder {
 
             category.images.forEach {
 
-                var file = File(imagesFolderName + "/" + it + ".png")
+                var file = File(imagesFolderName + "/" + it.substring(0, it.indexOf("=")) + ".png")
 
                 if(file.exists()){
 
-                    file.copyTo(File(sortedImagesFolderName + "/" + category.name + "/" + it + ".png"))
+                    var filename = ""
+                    try{
+
+                        filename = it.substring(it.indexOf("=")+1, it.lastIndexOf("=")) + "(" + it.substring(it.lastIndexOf("=")+1 )+ " cubes)"
+                    }catch (e: Exception){
+
+                        println(it)
+
+                    }
+
+
+                    if(File(sortedImagesFolderName + "/" + category.name + "/" + filename + ".png").exists()) filename += "1"
+                    if(File(sortedImagesFolderName + "/" + category.name + "/" + filename + ".png").exists()) filename += "2"
+                    if(File(sortedImagesFolderName + "/" + category.name + "/" + filename + ".png").exists()) filename += "3"
+
+
+
+                    file.copyTo(File(sortedImagesFolderName + "/" + category.name + "/" + filename + ".png"))
 
                 }else{
 

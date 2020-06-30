@@ -8,19 +8,19 @@ object Main {
     @JvmStatic
     fun main(args: Array<String>) {
 
-//        val reader = Reader(inputFolder)
-//
-//        reader.read()
-//
-//        var character = reader.createCharacter()
-//
-//        var writer = FileWriter(character.name)
-//        writer.writeCharacterToFile(character, outputFolder)
+        val reader = Reader(inputFolder)
+
+        reader.read()
+
+        var character = reader.createCharacter()
+
+        var writer = FileWriter(character.name)
+        writer.writeCharacterToFile(character, outputFolder)
 
 
-        var imagesFinder = ImageFinder()
-
-        imagesFinder.findImages()
+//        var imagesFinder = ImageFinder()
+//
+//        imagesFinder.findImages()
 
     }
 

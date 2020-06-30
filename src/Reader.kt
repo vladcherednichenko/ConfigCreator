@@ -12,12 +12,12 @@ class Reader(inputFolderName: String){
     val inputMainFolderName = inputFolderName
     var partsFolder = ""
 
-    val partsImagesFolderName = "/ out/Parts"           // for main part in main file
-    val jokeImagesFolderName = "/ out/Joke"             // for joke in main file
-    val constructionImagesFolder = "/ out/Construction" // for disappearance
-    val file360ImagesFolderName = "/ out/360"           // for 360 file
-    val animationImagesFolder  = "/ out/Animation"      // for animation in finish
-    val lipsImagesFolder = "/ out/Lips"                 // for lips in finish
+    val partsImagesFolderName = "/out/Parts"           // for main part in main file
+    val jokeImagesFolderName = "/out/Joke"             // for joke in main file
+    val constructionImagesFolder = "/out/Construction" // for disappearance
+    val file360ImagesFolderName = "/out/360"           // for 360 file
+    val animationImagesFolder  = "/out/Animation"      // for animation in finish
+    val lipsImagesFolder = "/out/Lips"                 // for lips in finish
 
 
 
@@ -98,7 +98,7 @@ class Reader(inputFolderName: String){
 
     private fun read360Images(){
 
-        if(!File("$inputMainFolderName/$figureName$file360ImagesFolderName").exists()){println ("360 folder not found")}
+        if(!File("$inputMainFolderName/$figureName$file360ImagesFolderName").exists()){println ("$inputMainFolderName/$figureName$file360ImagesFolderName folder not found")}
 
         File("$inputMainFolderName/$figureName$file360ImagesFolderName").listFiles().forEach{
 
@@ -130,7 +130,7 @@ class Reader(inputFolderName: String){
 
     private fun readLipsImages(){
 
-        if(!File("$inputMainFolderName/$figureName$lipsImagesFolder").exists()){println ("Lips folder not found")}
+        if(!File("$inputMainFolderName/$figureName$lipsImagesFolder").exists()){println ("$inputMainFolderName/$figureName$lipsImagesFolder folder not found")}
 
         File("$inputMainFolderName/$figureName$lipsImagesFolder").listFiles().forEach {
 

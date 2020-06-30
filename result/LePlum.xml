@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Figure name="LePlum" anchorPointX="0.5" anchorPointY="0">
+	<Part type="Foot" disappearanceInterval="1">
+		<Action type="H1" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="01_LePlum_Foot_01a_H1_01.png" />
+				<img src="01_LePlum_Foot_01b_H1_01.png" />
+			</Conversion>
+		</Action>
+		<Action type="H2" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="01_LePlum_Foot_02a_H2_01.png" />
+			</Conversion>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="01_LePlum_Foot_02a_H2_02.png" />
+			</Conversion>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="01_LePlum_Foot_02b_H2_01.png" />
+			</Conversion>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="01_LePlum_Foot_02b_H2_02.png" />
+			</Conversion>
+		</Action>
+		<Action type="F5" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="01_LePlum_Foot_03a_F5_01.png" />
+			</Conversion>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="01_LePlum_Foot_03a_F5_02.png" />
+			</Conversion>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="01_LePlum_Foot_03b_F5_01.png" />
+			</Conversion>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="01_LePlum_Foot_03b_F5_02.png" />
+			</Conversion>
+		</Action>
+		<Action type="F5" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="01_LePlum_Foot_04a_F5_01.png" />
+				<img src="01_LePlum_Foot_04b_F5_01.png" />
+			</Conversion>
+		</Action>
+		<Action type="H6" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="01_LePlum_Foot_05a_H6_01-1.png" />
+				<img src="01_LePlum_Foot_05b_H6_01-1.png" />
+			</Conversion>
+		</Action>
+		<Disappearance rotate="false">
+			<Audio>
+			</Audio>
+			<Component type="A" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_01_LePlum_Foot_05A_H6_01.jpg" />
+			</Component>
+			<Component type="B" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_01_LePlum_Foot_05B_H6_01.jpg" />
+			</Component>
+		</Disappearance>
+	</Part>
+	<Part type="Body" disappearanceInterval="1">
+		<Action type="H1" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="02_LePlum_Body_01_H1_01.png" />
+			</Conversion>
+		</Action>
+		<Action type="H3" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="02_LePlum_Body_02_H3_01.png" />
+			</Conversion>
+		</Action>
+		<Action type="H3" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="02_LePlum_Body_03_H3_01.png" />
+			</Conversion>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="02_LePlum_Body_03_H3_02.png" />
+			</Conversion>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="02_LePlum_Body_03_H3_03.png" />
+			</Conversion>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="02_LePlum_Body_03_H3_04.png" />
+			</Conversion>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="02_LePlum_Body_03_H3_05.png" />
+			</Conversion>
+		</Action>
+		<Action type="M5" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="02_LePlum_Body_04_M5_01.png" />
+			</Conversion>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="02_LePlum_Body_04_M5_02.png" />
+			</Conversion>
+		</Action>
+		<Action type="M4" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="02_LePlum_Body_05_M4_01.png" />
+			</Conversion>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="02_LePlum_Body_05_M4_02.png" />
+			</Conversion>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="02_LePlum_Body_05_M4_03.png" />
+			</Conversion>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="02_LePlum_Body_05_M4_04-1.png" />
+			</Conversion>
+		</Action>
+		<Disappearance rotate="false">
+			<Audio>
+			</Audio>
+			<Component type="" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_02_LePlum_Body_05_M4_04.jpg" />
+			</Component>
+		</Disappearance>
+	</Part>
+	<Part type="Hand" disappearanceInterval="1">
+		<Action type="F1" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="03_LePlum_Hand_01a_F1_01.png" />
+				<img src="03_LePlum_Hand_01b_F1_01.png" />
+			</Conversion>
+		</Action>
+		<Action type="F3" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="03_LePlum_Hand_02a_F3_01.png" />
+			</Conversion>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="03_LePlum_Hand_02a_F3_02.png" />
+			</Conversion>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="03_LePlum_Hand_02b_F3_01.png" />
+			</Conversion>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="03_LePlum_Hand_02b_F3_02.png" />
+			</Conversion>
+		</Action>
+		<Action type="F6" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="03_LePlum_Hand_03a_F6_01.png" />
+				<img src="03_LePlum_Hand_03b_F6_01.png" />
+			</Conversion>
+		</Action>
+		<Action type="F5" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="03_LePlum_Hand_04a_F5_01-1.png" />
+				<img src="03_LePlum_Hand_04b_F5_01-1.png" />
+			</Conversion>
+		</Action>
+		<Disappearance rotate="false">
+			<Audio>
+			</Audio>
+			<Component type="A" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_03_LePlum_Hand_04A_F5_01.jpg" />
+			</Component>
+			<Component type="B" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_03_LePlum_Hand_04B_F5_01.jpg" />
+			</Component>
+		</Disappearance>
+	</Part>
+	<Part type="Eyes" disappearanceInterval="1">
+		<Action type="F1" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="04_LePlum_Eyes_01a_F1_01.png" />
+				<img src="04_LePlum_Eyes_01b_F1_01.png" />
+			</Conversion>
+		</Action>
+		<Action type="H6" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="04_LePlum_Eyes_02a_H6_01.png" />
+				<img src="04_LePlum_Eyes_02b_H6_01.png" />
+			</Conversion>
+		</Action>
+		<Action type="M1" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="04_LePlum_Eyes_03a_M1_01.png" />
+				<img src="04_LePlum_Eyes_03b_M1_01.png" />
+			</Conversion>
+		</Action>
+		<Disappearance rotate="false">
+			<Audio>
+			</Audio>
+			<Component type="A" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_04_LePlum_Eyes_03A_M1_01.jpg" />
+			</Component>
+			<Component type="B" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_04_LePlum_Eyes_03B_M1_01.jpg" />
+			</Component>
+		</Disappearance>
+	</Part>
+	<Part type="Pupils" disappearanceInterval="1">
+		<Action type="F1" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="05_LePlum_Pupils_01a_F1_01.png" />
+				<img src="05_LePlum_Pupils_01b_F1_01.png" />
+			</Conversion>
+		</Action>
+		<Disappearance rotate="false">
+			<Audio>
+			</Audio>
+			<Component type="A" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_05_LePlum_Pupils_01A_F1_01.jpg" />
+			</Component>
+			<Component type="B" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_05_LePlum_Pupils_01B_F1_01.jpg" />
+			</Component>
+		</Disappearance>
+	</Part>
+	<Part type="Leaf" disappearanceInterval="1">
+		<Action type="F1" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="06_LePlum_Leaf_01_F1_01.png" />
+			</Conversion>
+		</Action>
+		<Action type="F3" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="06_LePlum_Leaf_02_F3_01.png" />
+			</Conversion>
+		</Action>
+		<Action type="F3" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="06_LePlum_Leaf_03_F3_01.png" />
+			</Conversion>
+		</Action>
+		<Action type="H4" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="06_LePlum_Leaf_04_H4_01.png" />
+			</Conversion>
+		</Action>
+		<Action type="M5" time="5" alphaTimeForCopy="0.5" handRotate="0" handMirroring="false" offsetX="0" offsetY="0">
+			<Audio>
+			</Audio>
+			<Conversion>
+				<startAlphaTime>1.5</startAlphaTime>
+				<alphaTime>0.5</alphaTime>
+				<startAlphaTimeForCopy>4</startAlphaTimeForCopy>
+				<img src="06_LePlum_Leaf_05_M5_01-1.png" />
+			</Conversion>
+		</Action>
+		<Disappearance rotate="false">
+			<Audio>
+			</Audio>
+			<Component type="" time="0.8" interval="0.04" startTime="1" pauseAfterFrame="0" pauseTime="0" startHopTime="0" >
+				<img src="b_06_LePlum_Leaf_05_M5_01_x01.jpg" />
+				<img src="b_06_LePlum_Leaf_05_M5_01_x02.jpg" />
+			</Component>
+		</Disappearance>
+	</Part>
+</Figure>

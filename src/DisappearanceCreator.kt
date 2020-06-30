@@ -167,7 +167,8 @@ class DisappearanceCreator (disapList: ArrayList<String>, jokeImages: ArrayList<
 
         var copy = image.toLowerCase()
 
-        return copy.contains("begin")
+        // joke comes after this file
+        return copy.contains("begin") || copy.contains("03_Kangaroo_Hip_03b_H4_01".toLowerCase())
 
     }
 
